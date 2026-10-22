@@ -1,10 +1,20 @@
 ---
 title: "Enunciados de los problemas"
 author: "Noel Cabrera Gálvez"
-format: 
- html: default
- pdf: default
-editor: visual
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    number-sections: true
+    code-fold: false
+    df-print: kable
+    embed-resources: true
+  typst:
+    fig-format: png
+    toc: true
+    number-sections: true
+    df-print: kable
+    papersize: a4
 ---
 
 # Noel Cabrera Gálvez
@@ -177,5 +187,9 @@ Responda con **Verdadero** o **Falso** a cada una de las cinco afirmaciones sigu
    todo $\alpha \in (0,1]$.
 5. La **flota propia** ($d_1$) no es la alternativa óptima con **ningún** criterio.
 
+# [Nombre]
 
+## [Ejercicio 1]
+
+## [Ejercicio 2]
 
