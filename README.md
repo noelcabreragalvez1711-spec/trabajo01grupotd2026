@@ -19,7 +19,7 @@ Cada documento se genera en **dos formatos**: `html` y `pdf` (con **Typst**).
 
 ## Organización del trabajo
 - El repositorio lo creó el **responsable del grupo**, Noel Cabrera Gálvez, y añadió al resto de miembros como **colaboradores**.
-- Los problemas resueltos son **los mismos que cada uno presentó en su proyecto individual**, con lo que cada mierno aportó su propio enunciado y su solución.
+- Los problemas resueltos son **los mismos que cada uno presentó en su proyecto individual**, con lo que cada miembro aportó su propio enunciado y su solución.
 - Cada miembro trabaja en un **fichero y secciones propias**, sin reescribir el trabajo de los demás, y usa **variables R con su propio nombre** para evitar interferencias al ejecutar todo el código en un mismo renderizado.
 - El trabajo se coordina mediante **issues** para repartir tareas y revisar los aportes de cada miembro, y se realiza con **Git** y **GitHub** para versionar los cambios.
 
