@@ -7,7 +7,9 @@ format:
 editor: visual
 ---
 
-### Ejercicio 1
+# Noel Cabrera Gálvez
+
+## Ejercicio 1
 
 Dada la siguiente tabla de decisión:
 
@@ -19,8 +21,7 @@ $$\begin{array}{|c|c|c|c|c|c|}
 \ V_2 & 8 & 2 & 2 & 1 & 5 \\ \hline
 \ V_3 & 4 & 5 & 4 & 3 & 2 \\ \hline
 \ V_4 & 8 & 9 & 3 & 2 & 0 \\ \hline
-\end{array}$$
-Responda razonadamente a las siguientes cuestiones:
+\end{array}$$ Responda razonadamente a las siguientes cuestiones:
 
 a)  La alternativa $V_1$ es óptima para alguno de los métodos en situación desfavorable.
 
@@ -32,7 +33,7 @@ d)  La alternativa $V_4$ es óptima según el criterio de Savage en al menos una
 
 e)  Al menos un criterio presenta múltiples alternativas óptimas.
 
-### Ejercicio 2
+## Ejercicio 2
 
 Ramón tiene un hijo que le ha pedido apuntarse a clases de teatro. Estas clases durarán como máximo hasta que acabe el curso dentro de 6 meses, aunque existe la posibilidad de que, debido al trabajo de Ramón, él y su familia se tengan que mudar dentro de 3 meses y su hijo tenga que dejar las clases. Tiene la opción de apuntarlo a la escuela "El teatrillo" en la que paga una mensualidad de 22€ por las clases. Puede apuntarlo también a la escuela "La máscara" en la que tiene que pagar directamente 100€ por los 6 meses de clases (no reembolsables). Existe una tercera escuela, "Deluxe", de las mejores de la ciudad, en la que ofrecen un primer mes de prueba gratis, tras el cual, si el alumno quiere continuar, tendrá que pagar 25€ mensuales, incluyendo el primer mes de prueba. Ramón conoce a su hijo y sabe que es posible que terminen no gustándole las clases y las acabe abandonando a la primera semana. A Ramón no le importa demasiado el bienestar de su hijo pero sabe que negarse a pagarle las clases puede causar problemas en casa, luego lo único que quiere es minimizar el gasto que éstas puedan suponer.
 
@@ -47,3 +48,134 @@ c)  El criterio de Wald es el único que selecciona a "La máscara".
 d)  La política del mes de prueba gratuito ayuda a la escuela "Deluxe" a ser seleccionada por al menos un criterio.
 
 e)  La escuela "El Teatrillo" es seleccionada por el criterio de Laplace por presentar el menor gasto medio mensual.
+
+# Esteban Blanco Díaz
+
+## Ejercicio 1: decisión de una delegación (datos inventados)
+
+### Enunciado
+
+La dirección de *Estudio Otto S.L.*, una empresa de arquitectura, debe decidir
+**en qué ciudad abrir su nueva delegación**. Las cuatro ciudades candidatas son las
+alternativas $d_1, d_2, d_3$ y $d_4$.
+
+Los tres **estados de la naturaleza** representan los escenarios de demanda que pueden darse
+durante el primer año de actividad de la delegación:
+
+- $e_1$: demanda **alta**;
+- $e_2$: demanda **media**;
+- $e_3$: demanda **baja**.
+
+La decisión se plantea en dos apartados, porque la dirección ha preparado dos estudios
+distintos del mismo proyecto.
+
+#### Apartado (a): situación favorable (beneficios)
+
+La dirección dispone de un estudio de **beneficio neto** (ingresos menos gastos de
+explotación) esperado para el primer año, expresado en **miles de euros**:
+
+| Alternativa | $e_1$ (demanda alta) | $e_2$ (demanda media) | $e_3$ (demanda baja) |
+|:------------|---------------------:|----------------------:|---------------------:|
+| $d_1$ | 125 | 95  | 70 |
+| $d_2$ | 100 | 115 | 50 |
+| $d_3$ | 85  | 85  | 85 |
+| $d_4$ | 145 | 60  | 40 |
+
+**Se pide:**
+
+1. Aplicar **cada uno de los seis criterios** de decisión bajo incertidumbre, de forma
+   **individual** (un criterio cada vez), a la tabla anterior, en **situación favorable**:
+   Wald (o pesimista), Optimista (o maximax), Hurwicz, Savage, Laplace y Punto Ideal.
+2. Justificar cuál es la **alternativa óptima** según cada criterio y qué **alternativa
+   resulta óptima con mayor número de criterios** (criterio de votación).
+3. Estudiar el **criterio de Hurwicz** de forma completa: obtener los intervalos de $\alpha$
+   en los que cada alternativa es óptima, e indicar los **puntos de corte**.
+
+#### Apartado (b): situación desfavorable (costes)
+
+La dirección dispone además de un estudio del **coste total de apertura** (inversión
+inicial más gastos de puesta en marcha) de la delegación en cada ciudad, también en **miles
+de euros**:
+
+| Alternativa | $e_1$ (demanda alta) | $e_2$ (demanda media) | $e_3$ (demanda baja) |
+|:------------|---------------------:|----------------------:|---------------------:|
+| $d_1$ | 250 | 300 | 340 |
+| $d_2$ | 220 | 280 | 400 |
+| $d_3$ | 300 | 260 | 310 |
+| $d_4$ | 400 | 230 | 290 |
+
+**Se pide:**
+
+1. Aplicar **cada uno de los seis criterios** de decisión bajo incertidumbre, de forma
+   **individual** (un criterio cada vez), a la tabla anterior, en **situación desfavorable**.
+2. Justificar cuál es la **alternativa óptima** según cada criterio y qué **alternativa
+   resulta óptima con mayor número de criterios**.
+3. Estudiar el **criterio de Hurwicz** de forma completa: obtener los intervalos de $\alpha$
+   en los que cada alternativa es óptima, e indicar los **puntos de corte**.
+
+#### Preguntas de verdadero o falso (Problema 1)
+
+Responda con **Verdadero** o **Falso** a cada una de las cinco afirmaciones siguientes.
+
+1. En el apartado (a), el criterio de **Wald** determina como alternativa óptima $d_3$.
+2. En el apartado (a), el criterio de **Laplace** determina como alternativa óptima $d_4$.
+3. En el apartado (b), el criterio de **Savage** determina como alternativa óptima $d_1$.
+4. En el apartado (b), la alternativa $d_2$ es la óptima con el criterio de **Hurwicz** para
+   todo $\alpha \in (0,1]$.
+5. En el apartado (b), $d_3$ es la alternativa que resulta óptima con el **mayor número de
+   criterios** (4 de los 6).
+
+## Ejercicio 2: gestión de la flota de reparto
+
+### Enunciado
+
+Una **empresa española de distribución de alimentación congelada** debe decidir **cómo gestionar
+su flota de reparto** en el área metropolitana en la que opera. Se barajan tres alternativas:
+
+- $d_1$: **flota propia** (camionetas frigoríficas de la empresa y conductores de plantilla);
+- $d_2$: **renting** (camionetas en régimen de alquiler a largo plazo con un conductor de
+  seguridad externo);
+- $d_3$: **subcontratación** del reparto a empresas de transporte..
+
+Los tres **estados de la naturaleza** son los escenarios de **demanda** (volumen de pedidos
+servidos al año) que pueden darse:
+
+- $e_1$: demanda **baja**;
+- $e_2$: demanda **media**;
+- $e_3$: demanda **alta**.
+
+El **coste anual total** (€) de cada alternativa en cada escenario, según los datos
+facilitados por la dirección financiera, es:
+
+| Alternativa | $e_1$ (demanda baja) | $e_2$ (demanda media) | $e_3$ (demanda alta) |
+|:------------|----------------------:|-----------------------:|----------------------:|
+| $d_1$ Flota propia | 320 000 | 380 000 | 450 000 |
+| $d_2$ Renting | 300 000 | 330 000 | 420 000 |
+| $d_3$ Subcontratación | 250 000 | 400 000 | 600 000 |
+
+**Se pide:**
+
+1. Resolver el problema con la **función R que devuelve la resolución de todos los métodos en
+   una única tabla** (`criterio.Todos`), en **situación desfavorable**, con
+   $\alpha = 0{,}5$.
+2. Interpretar la tabla de resultados obtenida: indicar la **alternativa óptima** según cada
+   criterio y la **alternativa que resulta óptima con mayor número de criterios**.
+3. Explicar **por qué** la alternativa más veces óptima es la que la dirección debería
+   recomendar, teniendo en cuenta el sentido económico de cada alternativa.
+4. Estudiar el **criterio de Hurwicz** de forma completa: obtener los intervalos de $\alpha$ en
+   los que cada alternativa es óptima e indicar los **puntos de corte**. ¿A partir de qué
+   grado de optimismo cambiaría la recomendación?
+
+#### Preguntas de verdadero o falso (Problema 2)
+
+Responda con **Verdadero** o **Falso** a cada una de las cinco afirmaciones siguientes.
+
+1. El criterio de **Wald** (pesimista) recomienda el **renting** ($d_2$).
+2. El criterio de **Laplace** recomienda la **flota propia** ($d_1$).
+3. El criterio de **Optimista** recomienda la **subcontratación** ($d_3$).
+4. Con el criterio de **Hurwicz**, la **subcontratación** ($d_3$) es la alternativa óptima para
+   todo $\alpha \in (0,1]$.
+5. La **flota propia** ($d_1$) no es la alternativa óptima con **ningún** criterio.
+
+
+
