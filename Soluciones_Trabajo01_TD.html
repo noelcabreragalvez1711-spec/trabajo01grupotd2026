@@ -6,7 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Noel Cabrera Gálvez, Esteban Blanco Díaz, Andrés Caro Bejarano Rafael">
+<meta name="author" content="Noel Cabrera Gálvez, Esteban Blanco Díaz, Rafael Andrés Caro Bejarano">
 
 <title>Solución de los problemas</title>
 <style>
@@ -2379,10 +2379,18 @@ window.Quarto = {
   </ul></li>
   <li><a href="#resumen-final" id="toc-resumen-final" class="nav-link" data-scroll-target="#resumen-final"><span class="header-section-number">2.3</span> Resumen final</a></li>
   </ul></li>
-  <li><a href="#nombre" id="toc-nombre" class="nav-link" data-scroll-target="#nombre"><span class="header-section-number">3</span> [Nombre]</a>
+  <li><a href="#rafael-andrés-caro-bejarano" id="toc-rafael-andrés-caro-bejarano" class="nav-link" data-scroll-target="#rafael-andrés-caro-bejarano"><span class="header-section-number">3</span> Rafael Andrés Caro Bejarano</a>
   <ul class="collapse">
-  <li><a href="#ejercicio-1-1" id="toc-ejercicio-1-1" class="nav-link" data-scroll-target="#ejercicio-1-1"><span class="header-section-number">3.1</span> Ejercicio 1</a></li>
-  <li><a href="#ejercicio-2-1" id="toc-ejercicio-2-1" class="nav-link" data-scroll-target="#ejercicio-2-1"><span class="header-section-number">3.2</span> Ejercicio 2</a></li>
+  <li><a href="#problema-1-tabla-de-decisión-abstracta" id="toc-problema-1-tabla-de-decisión-abstracta" class="nav-link" data-scroll-target="#problema-1-tabla-de-decisión-abstracta"><span class="header-section-number">3.1</span> Problema 1: Tabla de Decisión Abstracta</a>
+  <ul class="collapse">
+  <li><a href="#resolución-problema-1" id="toc-resolución-problema-1" class="nav-link" data-scroll-target="#resolución-problema-1"><span class="header-section-number">3.1.1</span> <strong>RESOLUCIÓN PROBLEMA 1</strong></a></li>
+  <li><a href="#soluciones-verdadero-falso" id="toc-soluciones-verdadero-falso" class="nav-link" data-scroll-target="#soluciones-verdadero-falso"><span class="header-section-number">3.1.2</span> <strong>SOLUCIONES VERDADERO / FALSO</strong></a></li>
+  </ul></li>
+  <li><a href="#problema-2" id="toc-problema-2" class="nav-link" data-scroll-target="#problema-2"><span class="header-section-number">3.2</span> PROBLEMA 2</a>
+  <ul class="collapse">
+  <li><a href="#resolución-problema-2" id="toc-resolución-problema-2" class="nav-link" data-scroll-target="#resolución-problema-2"><span class="header-section-number">3.2.1</span> <strong>RESOLUCIÓN PROBLEMA 2</strong></a></li>
+  <li><a href="#soluciones-verdadero-falso-1" id="toc-soluciones-verdadero-falso-1" class="nav-link" data-scroll-target="#soluciones-verdadero-falso-1"><span class="header-section-number">3.2.2</span> SOLUCIONES VERDADERO / FALSO</a></li>
+  </ul></li>
   </ul></li>
   </ul>
 <div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="Soluciones_Trabajo01_TD.pdf"><i class="bi bi-file-pdf"></i>Typst</a></li></ul></div></nav>
@@ -2401,7 +2409,7 @@ window.Quarto = {
     <div>
     <div class="quarto-title-meta-heading">Author</div>
     <div class="quarto-title-meta-contents">
-             <p>Noel Cabrera Gálvez, Esteban Blanco Díaz, Andrés Caro Bejarano Rafael </p>
+             <p>Noel Cabrera Gálvez, Esteban Blanco Díaz, Rafael Andrés Caro Bejarano </p>
           </div>
   </div>
     
@@ -2422,7 +2430,7 @@ window.Quarto = {
 <pre><code>Using GitHub PAT from the git credential store.</code></pre>
 </div>
 <div class="cell-output cell-output-stderr">
-<pre><code>Skipping install of &#39;TDecisionCodigo&#39; from a github remote, the SHA1 (c4586ab5) has not changed since last install.
+<pre><code>Skipping install of &#39;TDecisionCodigo&#39; from a github remote, the SHA1 (4a609b95) has not changed since last install.
   Use `force = TRUE` to force installation</code></pre>
 </div>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(TDecisionCodigo)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
@@ -2587,13 +2595,14 @@ Soluciones &quot;( 0 , 0.5 )&quot;   &quot;2&quot;
 <p><strong>c) VERDADERO.</strong> El criterio de Wald elige a <span class="math inline">\(V_1\)</span>, el criterio optimista a <span class="math inline">\(V_4\)</span> y el criterio de Savage elige a <span class="math inline">\(V_3\)</span> tanto en situación favorable como desfavorable.</p>
 <p><strong>d) FALSO.</strong> La alternativa seleccionada por el criterio de Savage en situación favorable es <span class="math inline">\(V_3\)</span> mientras que en situación desfavorable hay un empate entre <span class="math inline">\(V_0\)</span>, <span class="math inline">\(V_1\)</span> y <span class="math inline">\(V_3\)</span>, luego <span class="math inline">\(V_4\)</span> nunca es seleccionada.</p>
 <p><strong>e) VERDADERO.</strong> Para el criterio de Savage en situación desfavorable existe un empate entre <span class="math inline">\(V_0\)</span>, <span class="math inline">\(V_1\)</span> y <span class="math inline">\(V_3\)</span>.</p>
+<p><br></p>
 </section>
 </section>
 </section>
 <section id="ejercicio-2" class="level2" data-number="1.2">
 <h2 data-number="1.2" class="anchored" data-anchor-id="ejercicio-2"><span class="header-section-number">1.2</span> Ejercicio 2</h2>
 <p>Ramón tiene un hijo que le ha pedido apuntarse a clases de teatro. Estas clases durarán como máximo hasta que acabe el curso dentro de 6 meses, aunque existe la posibilidad de que, debido al trabajo de Ramón, él y su familia se tengan que mudar dentro de 3 meses y su hijo tenga que dejar las clases. Tiene la opción de apuntarlo a la escuela “El teatrillo” en la que paga una mensualidad de 22€ por las clases. Puede apuntarlo también a la escuela “La máscara” en la que tiene que pagar directamente 100€ por los 6 meses de clases (no reembolsables). Existe una tercera escuela, “Deluxe”, de las mejores de la ciudad, en la que ofrecen un primer mes de prueba gratis, tras el cual, si el alumno quiere continuar, tendrá que pagar 25€ mensuales, incluyendo el primer mes de prueba. Ramón conoce a su hijo y sabe que es posible que terminen no gustándole las clases y las acabe abandonando a la primera semana. A Ramón no le importa demasiado el bienestar de su hijo pero sabe que negarse a pagarle las clases puede causar problemas en casa, luego lo único que quiere es minimizar el gasto que éstas puedan suponer.</p>
-<p>En base al enunciado responda razonadamente a las siguientes cuestiones:</p>
+<p>En base al enunciado construya la matriz de costes y responda razonadamente a las siguientes cuestiones:</p>
 <ol type="a">
 <li><p>“La máscara” es la escuela seleccionada por el mayor número de criterios.</p></li>
 <li><p>Si desde la empresa en la que trabaja Ramón le confirman que, efectivamente, tiene que mudarse con su familia dentro de 3 meses, esto alteraría la escuela seleccionada por el criterio de Wald.</p></li>
@@ -4243,13 +4252,614 @@ $IntervalosAlfa
 </table>
 </section>
 </section>
-<section id="nombre" class="level1" data-number="3">
-<h1 data-number="3"><span class="header-section-number">3</span> [Nombre]</h1>
-<section id="ejercicio-1-1" class="level2" data-number="3.1">
-<h2 data-number="3.1" class="anchored" data-anchor-id="ejercicio-1-1"><span class="header-section-number">3.1</span> <a href="#ejercicio-1">Ejercicio 1</a></h2>
+<section id="rafael-andrés-caro-bejarano" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> Rafael Andrés Caro Bejarano</h1>
+<section id="problema-1-tabla-de-decisión-abstracta" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="problema-1-tabla-de-decisión-abstracta"><span class="header-section-number">3.1</span> Problema 1: Tabla de Decisión Abstracta</h2>
+<p>Dada la siguiente matriz de decisión con 4 alternativas de decisión (<span class="math inline">\(d_1, d_2, d_3, d_4\)</span>) y 4 estados de la naturaleza (<span class="math inline">\(e_1, e_2, e_3, e_4\)</span>):</p>
+<div class="cell">
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
+<thead>
+<tr class="header">
+<th style="text-align: left;"></th>
+<th style="text-align: right;"><span class="math inline">\(e_1\)</span></th>
+<th style="text-align: right;"><span class="math inline">\(e_2\)</span></th>
+<th style="text-align: right;"><span class="math inline">\(e_3\)</span></th>
+<th style="text-align: right;"><span class="math inline">\(e_4\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><span class="math inline">\(d_1\)</span></td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">21</td>
+<td style="text-align: right;">-2</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><span class="math inline">\(d_2\)</span></td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">14</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><span class="math inline">\(d_3\)</span></td>
+<td style="text-align: right;">-4</td>
+<td style="text-align: right;">26</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">13</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><span class="math inline">\(d_4\)</span></td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">9</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p>Se pide aplicar por separado las funciones individuales de decisión bajo incertidumbre (Wald, Optimista, Hurwicz con <span class="math inline">\(\alpha = 0.3\)</span>, Savage y Laplace), evaluando el problema tanto en situación <strong>favorable</strong> (beneficios) como en situación <strong>desfavorable</strong> (costos).</p>
+<p><br></p>
+<section id="resolución-problema-1" class="level3" data-number="3.1.1">
+<h3 data-number="3.1.1" class="anchored" data-anchor-id="resolución-problema-1"><span class="header-section-number">3.1.1</span> <strong>RESOLUCIÓN PROBLEMA 1</strong></h3>
+<p><br></p>
+<section id="resolución-caso-favorable" class="level4" data-number="3.1.1.1">
+<h4 data-number="3.1.1.1" class="anchored" data-anchor-id="resolución-caso-favorable"><span class="header-section-number">3.1.1.1</span> <em>RESOLUCIÓN CASO FAVORABLE</em></h4>
+<ul>
+<li>Criterio de Wald (pesimista)</li>
+</ul>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb152"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb152-1"><a href="#cb152-1" aria-hidden="true" tabindex="-1"></a>res_wald_fav <span class="ot">&lt;-</span> <span class="fu">criterio.Wald</span>(tabla1, <span class="at">favorable =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb152-2"><a href="#cb152-2" aria-hidden="true" tabindex="-1"></a>res_wald_fav</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>$criterio
+[1] &quot;Wald&quot;
+
+$metodo
+[1] &quot;favorable&quot;
+
+$tablaX
+      $e_1$ $e_2$ $e_3$ $e_4$
+$d_1$    15     3    21    -2
+$d_2$     8    19    13    14
+$d_3$    -4    26     5    13
+$d_4$    20     7     2     9
+
+$ValorAlternativas
+$d_1$ $d_2$ $d_3$ $d_4$ 
+   -2     8    -4     2 
+
+$ValorOptimo
+[1] 8
+
+$AlternativaOptima
+$d_2$ 
+    2 </code></pre>
+</div>
+</div>
+<p><br></p>
+<ul>
+<li>Criterio optimista</li>
+</ul>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb154"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb154-1"><a href="#cb154-1" aria-hidden="true" tabindex="-1"></a>res_opt_fav <span class="ot">&lt;-</span> <span class="fu">criterio.Optimista</span>(tabla1, <span class="at">favorable =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb154-2"><a href="#cb154-2" aria-hidden="true" tabindex="-1"></a>res_opt_fav</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>$criterio
+[1] &quot;Optimista&quot;
+
+$metodo
+[1] &quot;favorable&quot;
+
+$tablaX
+      $e_1$ $e_2$ $e_3$ $e_4$
+$d_1$    15     3    21    -2
+$d_2$     8    19    13    14
+$d_3$    -4    26     5    13
+$d_4$    20     7     2     9
+
+$ValorAlternativas
+$d_1$ $d_2$ $d_3$ $d_4$ 
+   21    19    26    20 
+
+$ValorOptimo
+[1] 26
+
+$AlternativaOptima
+$d_3$ 
+    3 </code></pre>
+</div>
+</div>
+<p><br></p>
+<ul>
+<li>Criterio de Hurwicz (<span class="math inline">\(\alpha = 0.3\)</span>)</li>
+</ul>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb156"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb156-1"><a href="#cb156-1" aria-hidden="true" tabindex="-1"></a>res_hurwicz_fav <span class="ot">&lt;-</span> <span class="fu">criterio.Hurwicz</span>(tabla1, <span class="at">alfa =</span> <span class="fl">0.3</span>, <span class="at">favorable =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb156-2"><a href="#cb156-2" aria-hidden="true" tabindex="-1"></a>res_hurwicz_fav</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>$criterio
+[1] &quot;Hurwicz&quot;
+
+$alfa
+[1] 0.3
+
+$metodo
+[1] &quot;favorable&quot;
+
+$tablaX
+      $e_1$ $e_2$ $e_3$ $e_4$
+$d_1$    15     3    21    -2
+$d_2$     8    19    13    14
+$d_3$    -4    26     5    13
+$d_4$    20     7     2     9
+
+$ValorAlternativas
+$d_1$ $d_2$ $d_3$ $d_4$ 
+  4.9  11.3   5.0   7.4 
+
+$ValorOptimo
+[1] 11.3
+
+$AlternativaOptima
+$d_2$ 
+    2 </code></pre>
+</div>
+</div>
+<p><br></p>
+<ul>
+<li>Criterio de Savage (Minimax Arrepentimiento)</li>
+</ul>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb158"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb158-1"><a href="#cb158-1" aria-hidden="true" tabindex="-1"></a>res_savage_fav <span class="ot">&lt;-</span> <span class="fu">criterio.Savage</span>(tabla1, <span class="at">favorable =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb158-2"><a href="#cb158-2" aria-hidden="true" tabindex="-1"></a>res_savage_fav</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>$criterio
+[1] &quot;Savage&quot;
+
+$metodo
+[1] &quot;favorable&quot;
+
+$tablaX
+      $e_1$ $e_2$ $e_3$ $e_4$
+$d_1$    15     3    21    -2
+$d_2$     8    19    13    14
+$d_3$    -4    26     5    13
+$d_4$    20     7     2     9
+
+$Mejores
+$e_1$ $e_2$ $e_3$ $e_4$ 
+   20    26    21    14 
+
+$Pesos
+      $e_1$ $e_2$ $e_3$ $e_4$
+$d_1$     5    23     0    16
+$d_2$    12     7     8     0
+$d_3$    24     0    16     1
+$d_4$     0    19    19     5
+
+$ValorAlternativas
+$d_1$ $d_2$ $d_3$ $d_4$ 
+   23    12    24    19 
+
+$ValorOptimo
+[1] 12
+
+$AlternativaOptima
+$d_2$ 
+    2 </code></pre>
+</div>
+</div>
+<p><br></p>
+<ul>
+<li>Criterio de Laplace</li>
+</ul>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb160"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb160-1"><a href="#cb160-1" aria-hidden="true" tabindex="-1"></a>res_laplace_fav <span class="ot">&lt;-</span> <span class="fu">criterio.Laplace</span>(tabla1, <span class="at">favorable =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb160-2"><a href="#cb160-2" aria-hidden="true" tabindex="-1"></a>res_laplace_fav</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>$criterio
+[1] &quot;Laplace&quot;
+
+$metodo
+[1] &quot;favorable&quot;
+
+$tablaX
+      $e_1$ $e_2$ $e_3$ $e_4$
+$d_1$    15     3    21    -2
+$d_2$     8    19    13    14
+$d_3$    -4    26     5    13
+$d_4$    20     7     2     9
+
+$ValorAlternativas
+$d_1$ $d_2$ $d_3$ $d_4$ 
+ 9.25 13.50 10.00  9.50 
+
+$ValorOptimo
+[1] 13.5
+
+$AlternativaOptima
+$d_2$ 
+    2 </code></pre>
+</div>
+</div>
+<p><br></p>
 </section>
-<section id="ejercicio-2-1" class="level2" data-number="3.2">
-<h2 data-number="3.2" class="anchored" data-anchor-id="ejercicio-2-1"><span class="header-section-number">3.2</span> <a href="#ejercicio-2">Ejercicio 2</a></h2>
+<section id="resolución-caso-desfavorable" class="level4" data-number="3.1.1.2">
+<h4 data-number="3.1.1.2" class="anchored" data-anchor-id="resolución-caso-desfavorable"><span class="header-section-number">3.1.1.2</span> <em>RESOLUCIÓN CASO DESFAVORABLE</em></h4>
+<ul>
+<li>Criterio de Wald (Pesimista / Minimax)</li>
+</ul>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb162"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb162-1"><a href="#cb162-1" aria-hidden="true" tabindex="-1"></a>res_wald_desf <span class="ot">&lt;-</span> <span class="fu">criterio.Wald</span>(tabla1, <span class="at">favorable =</span> <span class="cn">FALSE</span>)</span>
+<span id="cb162-2"><a href="#cb162-2" aria-hidden="true" tabindex="-1"></a>res_wald_desf</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>$criterio
+[1] &quot;Wald&quot;
+
+$metodo
+[1] &quot;desfavorable&quot;
+
+$tablaX
+      $e_1$ $e_2$ $e_3$ $e_4$
+$d_1$    15     3    21    -2
+$d_2$     8    19    13    14
+$d_3$    -4    26     5    13
+$d_4$    20     7     2     9
+
+$ValorAlternativas
+$d_1$ $d_2$ $d_3$ $d_4$ 
+   21    19    26    20 
+
+$ValorOptimo
+[1] 19
+
+$AlternativaOptima
+$d_2$ 
+    2 </code></pre>
+</div>
+</div>
+<p><br></p>
+<ul>
+<li>Criterio Optimista (Minimin)</li>
+</ul>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb164"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb164-1"><a href="#cb164-1" aria-hidden="true" tabindex="-1"></a>res_opt_desf <span class="ot">&lt;-</span> <span class="fu">criterio.Optimista</span>(tabla1, <span class="at">favorable =</span> <span class="cn">FALSE</span>)</span>
+<span id="cb164-2"><a href="#cb164-2" aria-hidden="true" tabindex="-1"></a>res_opt_desf</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>$criterio
+[1] &quot;Optimista&quot;
+
+$metodo
+[1] &quot;desfavorable&quot;
+
+$tablaX
+      $e_1$ $e_2$ $e_3$ $e_4$
+$d_1$    15     3    21    -2
+$d_2$     8    19    13    14
+$d_3$    -4    26     5    13
+$d_4$    20     7     2     9
+
+$ValorAlternativas
+$d_1$ $d_2$ $d_3$ $d_4$ 
+   -2     8    -4     2 
+
+$ValorOptimo
+[1] -4
+
+$AlternativaOptima
+$d_3$ 
+    3 </code></pre>
+</div>
+</div>
+<p><br></p>
+<ul>
+<li>Criterio de Hurwicz (<span class="math inline">\(\alpha = 0.3\)</span>)</li>
+</ul>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb166"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb166-1"><a href="#cb166-1" aria-hidden="true" tabindex="-1"></a>res_hurwicz_desf <span class="ot">&lt;-</span> <span class="fu">criterio.Hurwicz</span>(tabla1, <span class="at">alfa =</span> <span class="fl">0.3</span>, <span class="at">favorable =</span> <span class="cn">FALSE</span>)</span>
+<span id="cb166-2"><a href="#cb166-2" aria-hidden="true" tabindex="-1"></a>res_hurwicz_desf</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>$criterio
+[1] &quot;Hurwicz&quot;
+
+$alfa
+[1] 0.3
+
+$metodo
+[1] &quot;desfavorable&quot;
+
+$tablaX
+      $e_1$ $e_2$ $e_3$ $e_4$
+$d_1$    15     3    21    -2
+$d_2$     8    19    13    14
+$d_3$    -4    26     5    13
+$d_4$    20     7     2     9
+
+$ValorAlternativas
+$d_1$ $d_2$ $d_3$ $d_4$ 
+ 14.1  15.7  17.0  14.6 
+
+$ValorOptimo
+[1] 14.1
+
+$AlternativaOptima
+$d_1$ 
+    1 </code></pre>
+</div>
+</div>
+<p><br></p>
+<ul>
+<li>Criterio de Savage (Minimax Penalización)</li>
+</ul>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb168"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb168-1"><a href="#cb168-1" aria-hidden="true" tabindex="-1"></a>res_savage_desf <span class="ot">&lt;-</span> <span class="fu">criterio.Savage</span>(tabla1, <span class="at">favorable =</span> <span class="cn">FALSE</span>)</span>
+<span id="cb168-2"><a href="#cb168-2" aria-hidden="true" tabindex="-1"></a>res_savage_desf</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>$criterio
+[1] &quot;Savage&quot;
+
+$metodo
+[1] &quot;desfavorable&quot;
+
+$tablaX
+      $e_1$ $e_2$ $e_3$ $e_4$
+$d_1$    15     3    21    -2
+$d_2$     8    19    13    14
+$d_3$    -4    26     5    13
+$d_4$    20     7     2     9
+
+$Mejores
+$e_1$ $e_2$ $e_3$ $e_4$ 
+   -4     3     2    -2 
+
+$Pesos
+      $e_1$ $e_2$ $e_3$ $e_4$
+$d_1$    19     0    19     0
+$d_2$    12    16    11    16
+$d_3$     0    23     3    15
+$d_4$    24     4     0    11
+
+$ValorAlternativas
+$d_1$ $d_2$ $d_3$ $d_4$ 
+   19    16    23    24 
+
+$ValorOptimo
+[1] 16
+
+$AlternativaOptima
+$d_2$ 
+    2 </code></pre>
+</div>
+</div>
+<p><br></p>
+<ul>
+<li>Criterio de Laplace</li>
+</ul>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb170"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb170-1"><a href="#cb170-1" aria-hidden="true" tabindex="-1"></a>res_laplace_desf <span class="ot">&lt;-</span> <span class="fu">criterio.Laplace</span>(tabla1, <span class="at">favorable =</span> <span class="cn">FALSE</span>)</span>
+<span id="cb170-2"><a href="#cb170-2" aria-hidden="true" tabindex="-1"></a>res_laplace_desf</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>$criterio
+[1] &quot;Laplace&quot;
+
+$metodo
+[1] &quot;desfavorable&quot;
+
+$tablaX
+      $e_1$ $e_2$ $e_3$ $e_4$
+$d_1$    15     3    21    -2
+$d_2$     8    19    13    14
+$d_3$    -4    26     5    13
+$d_4$    20     7     2     9
+
+$ValorAlternativas
+$d_1$ $d_2$ $d_3$ $d_4$ 
+ 9.25 13.50 10.00  9.50 
+
+$ValorOptimo
+[1] 9.25
+
+$AlternativaOptima
+$d_1$ 
+    1 </code></pre>
+</div>
+</div>
+<p><br></p>
+</section>
+</section>
+<section id="soluciones-verdadero-falso" class="level3" data-number="3.1.2">
+<h3 data-number="3.1.2" class="anchored" data-anchor-id="soluciones-verdadero-falso"><span class="header-section-number">3.1.2</span> <strong>SOLUCIONES VERDADERO / FALSO</strong></h3>
+<ol type="1">
+<li><p><strong>FALSO</strong>. En situación favorable, el criterio de Wald selecciona la alternativa <span class="math inline">\(d_2\)</span>. Los mínimos por alternativa son <span class="math inline">\(d_1: -2\)</span>, <span class="math inline">\(d_2: 8\)</span>, <span class="math inline">\(d_3: -4\)</span>, <span class="math inline">\(d_4: 2\)</span>. El máximo de los mínimos es <span class="math inline">\(8\)</span>, correspondiente a <span class="math inline">\(d_2\)</span>.</p></li>
+<li><p><strong>FALSO</strong>. En situación favorable, el criterio Optimista selecciona como mejor opción la alternativa <span class="math inline">\(d_3\)</span>. Los máximos por fila son <span class="math inline">\(d_1 :21\)</span>, <span class="math inline">\(d_2 :19\)</span>, <span class="math inline">\(d_3 :26\)</span>, <span class="math inline">\(d_4 :20\)</span>. El máximo global es <span class="math inline">\(26\)</span>, seleccionando <span class="math inline">\(d_3\)</span>.</p></li>
+<li><p><strong>VERDADERO</strong>. En situación favorable con un índice de optimismo <span class="math inline">\(\alpha = 0.3\)</span>, el criterio de Hurwicz recomienda la alternativa <span class="math inline">\(d_2\)</span> <span class="math inline">\(d_1: 4.9\)</span>, <span class="math inline">\(d_2: 11.3\)</span>, <span class="math inline">\(d_3: 5.0\)</span>, <span class="math inline">\(d_4: 7.4\)</span>. El valor óptimo es <span class="math inline">\(11.3\)</span> que corresponde a <span class="math inline">\(d_2\)</span>.</p></li>
+<li><p><strong>FALSO</strong>. La matriz de mínimos por columna (óptimos en costos) es <span class="math inline">\((-4, 3, 2, -2)\)</span>. Las penalizaciones máximas por fila son: <span class="math inline">\(d_1: 19\)</span>, <span class="math inline">\(d_2: 16\)</span>, <span class="math inline">\(d_3: 23\)</span>, <span class="math inline">\(d_4: 24\)</span>. El mínimo pesar lo alcanza <span class="math inline">\(d_2\)</span> con valor 16.</p></li>
+<li><p><strong>FALSO</strong>. En situación desfavorable (costes), el criterio de Laplace busca minimizar la media de cada alternativa. Las medias calculadas son: <span class="math inline">\(d_1 = 9.25\)</span>, <span class="math inline">\(d_2 = 13.50\)</span>, <span class="math inline">\(d_3 = 10.00\)</span> y <span class="math inline">\(d_4 = 9.50\)</span>. Por tanto, el óptimo corresponde a la alternativa con menor coste medio, que es <span class="math inline">\(d_1\)</span> (con un valor de <span class="math inline">\(9.25\)</span>), y no <span class="math inline">\(d_3\)</span>.</p>
+<p><br></p></li>
+</ol>
+</section>
+</section>
+<section id="problema-2" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="problema-2"><span class="header-section-number">3.2</span> PROBLEMA 2</h2>
+<p>Una consultora tecnológica en Sevilla necesita contratar una infraestructura de servidores en la nube para gestionar las cargas de computación de sus clientes durante el próximo trimestre. Dispone de cuatro opciones de contratación:</p>
+<ul>
+<li><span class="math inline">\(d_1\)</span> (Plan Básico Compartido): Coste fijo bajo, pero con fuertes penalizaciones económicas si la demanda de computación se dispara.</li>
+<li><span class="math inline">\(d_2\)</span> (Plan Instancias Reservadas): Coste intermedio y equilibrado con soporte técnico estándar.</li>
+<li><span class="math inline">\(d_3\)</span> (Plan Clúster Dedicado Elástico): Alta capacidad base con autoescalado para absorber picos de trabajo intenso.</li>
+<li><span class="math inline">\(d_4\)</span> (Plan Híbrido Multicloud): Máxima redundancia y tolerancia a fallos, pero con una cuota base muy elevada.</li>
+</ul>
+<p>Los costes totales estimados (en miles de euros) según el nivel de demanda que se presente en el trimestre (<span class="math inline">\(e_1\)</span>: Baja, <span class="math inline">\(e_2\)</span>: Media, <span class="math inline">\(e_3\)</span>: Alta) vienen dados por la siguiente matriz:</p>
+<p><br></p>
+<div class="cell">
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
+<caption>Matriz de Costes de Infraestructura (miles de euros)</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;"></th>
+<th style="text-align: right;">e1_Baja</th>
+<th style="text-align: right;">e2_Media</th>
+<th style="text-align: right;">e3_Alta</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">d1_Basico</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">28</td>
+<td style="text-align: right;">65</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">d2_Instancias</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: right;">42</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">d3_Cluster</td>
+<td style="text-align: right;">25</td>
+<td style="text-align: right;">27</td>
+<td style="text-align: right;">31</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">d4_Hibrido</td>
+<td style="text-align: right;">30</td>
+<td style="text-align: right;">32</td>
+<td style="text-align: right;">34</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p><br></p>
+<section id="resolución-problema-2" class="level3" data-number="3.2.1">
+<h3 data-number="3.2.1" class="anchored" data-anchor-id="resolución-problema-2"><span class="header-section-number">3.2.1</span> <strong>RESOLUCIÓN PROBLEMA 2</strong></h3>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb172"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb172-1"><a href="#cb172-1" aria-hidden="true" tabindex="-1"></a>res_todos <span class="ot">&lt;-</span> <span class="fu">criterio.Todos</span>(tabla2, <span class="at">alfa =</span> <span class="fl">0.35</span>, <span class="at">favorable =</span> <span class="cn">FALSE</span>)</span>
+<span id="cb172-2"><a href="#cb172-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb172-3"><a href="#cb172-3" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">kable</span>(res_todos, <span class="at">caption =</span> <span class="st">&quot;Resultados globales de los criterios de decisión bajo incertidumbre&quot;</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
+<caption>Resultados globales de los criterios de decisión bajo incertidumbre</caption>
+<colgroup>
+<col style="width: 14%">
+<col style="width: 6%">
+<col style="width: 7%">
+<col style="width: 6%">
+<col style="width: 8%">
+<col style="width: 7%">
+<col style="width: 8%">
+<col style="width: 10%">
+<col style="width: 8%">
+<col style="width: 10%">
+<col style="width: 10%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;"></th>
+<th style="text-align: left;">e1_Baja</th>
+<th style="text-align: left;">e2_Media</th>
+<th style="text-align: left;">e3_Alta</th>
+<th style="text-align: left;">Wald</th>
+<th style="text-align: left;">Optimista</th>
+<th style="text-align: left;">Hurwicz</th>
+<th style="text-align: left;">Savage</th>
+<th style="text-align: left;">Laplace</th>
+<th style="text-align: left;">Punto Ideal</th>
+<th style="text-align: left;">Veces Optima</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">d1_Basico</td>
+<td style="text-align: left;">12</td>
+<td style="text-align: left;">28</td>
+<td style="text-align: left;">65</td>
+<td style="text-align: left;">65</td>
+<td style="text-align: left;">12</td>
+<td style="text-align: left;">46.45</td>
+<td style="text-align: left;">34</td>
+<td style="text-align: left;">35.00</td>
+<td style="text-align: left;">34.23</td>
+<td style="text-align: left;">1</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">d2_Instancias</td>
+<td style="text-align: left;">18</td>
+<td style="text-align: left;">24</td>
+<td style="text-align: left;">42</td>
+<td style="text-align: left;">42</td>
+<td style="text-align: left;">18</td>
+<td style="text-align: left;">33.60</td>
+<td style="text-align: left;">11</td>
+<td style="text-align: left;">28.00</td>
+<td style="text-align: left;">12.53</td>
+<td style="text-align: left;">2</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">d3_Cluster</td>
+<td style="text-align: left;">25</td>
+<td style="text-align: left;">27</td>
+<td style="text-align: left;">31</td>
+<td style="text-align: left;">31</td>
+<td style="text-align: left;">25</td>
+<td style="text-align: left;">28.90</td>
+<td style="text-align: left;">13</td>
+<td style="text-align: left;">27.67</td>
+<td style="text-align: left;">13.34</td>
+<td style="text-align: left;">3</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">d4_Hibrido</td>
+<td style="text-align: left;">30</td>
+<td style="text-align: left;">32</td>
+<td style="text-align: left;">34</td>
+<td style="text-align: left;">34</td>
+<td style="text-align: left;">30</td>
+<td style="text-align: left;">32.60</td>
+<td style="text-align: left;">18</td>
+<td style="text-align: left;">32.00</td>
+<td style="text-align: left;">19.92</td>
+<td style="text-align: left;">0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">iAlt.Opt (Desfav.)</td>
+<td style="text-align: left;">–</td>
+<td style="text-align: left;">–</td>
+<td style="text-align: left;">–</td>
+<td style="text-align: left;">d3_Cluster</td>
+<td style="text-align: left;">d1_Basico</td>
+<td style="text-align: left;">d3_Cluster</td>
+<td style="text-align: left;">d2_Instancias</td>
+<td style="text-align: left;">d3_Cluster</td>
+<td style="text-align: left;">d2_Instancias</td>
+<td style="text-align: left;">d3_Cluster</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p><br></p>
+</section>
+<section id="soluciones-verdadero-falso-1" class="level3" data-number="3.2.2">
+<h3 data-number="3.2.2" class="anchored" data-anchor-id="soluciones-verdadero-falso-1"><span class="header-section-number">3.2.2</span> SOLUCIONES VERDADERO / FALSO</h3>
+<ol type="1">
+<li><strong>VERDADERO</strong>. Al tratarse de costes, el criterio optimista busca el mínimo absoluto de la matriz: <span class="math inline">\(\min(12, 28, 65, 18, 24, 42, 25, 27, 31, 30, 32, 34) = 12\)</span>, alcanzado por <span class="math inline">\(d_1\)</span> ante demanda baja (<span class="math inline">\(e_1\)</span>).</li>
+<li><strong>FALSO</strong>. En costes se aplica la regla minimax (el mínimo de los peores escenarios). Los costes máximos por fila son <span class="math inline">\(d_1: 65\)</span>, <span class="math inline">\(d_2: 42\)</span>, <span class="math inline">\(d_3: 31\)</span> y <span class="math inline">\(d_4: 34\)</span>. El menor de ellos es <span class="math inline">\(31\)</span>, correspondiente a <span class="math inline">\(d_3\)</span> (Plan Clúster).</li>
+<li><strong>VERDADERO</strong>. Asumiendo igual probabilidad (<span class="math inline">\(1/3\)</span>) para cada estado se tiene que <span class="math inline">\(E(d_1) = 35.00\)</span>, <span class="math inline">\(E(d_2) = 28.00\)</span>, <span class="math inline">\(E(d_3) = 27.67\)</span>, <span class="math inline">\(E(d_4) = 32.00\)</span> El menor coste esperado es <span class="math inline">\(27.67\)</span>, eligiendo <span class="math inline">\(d_3\)</span>.</li>
+<li><strong>FALSO.</strong> Veamos la resolución de ambos criterios:
+<ul>
+<li><p><strong>Savage:</strong> La matriz de pesares toma como referencia los mínimos por columna <span class="math inline">\((12, 24, 31)\)</span>, obteniendo como pesares máximos <span class="math inline">\(34\)</span> para <span class="math inline">\(d_1\)</span>, <span class="math inline">\(11\)</span> para <span class="math inline">\(d_2\)</span>, <span class="math inline">\(13\)</span> para <span class="math inline">\(d_3\)</span> y <span class="math inline">\(18\)</span> para <span class="math inline">\(d_4\)</span>. El menor pesar máximo es <span class="math inline">\(11\)</span>, por lo que se selecciona la alternativa <span class="math inline">\(d_2\)</span>.</p></li>
+<li><p><strong>Hurwicz (</strong><span class="math inline">\(\alpha = 0.35\)</span> en costes): Aplicando la expresión <span class="math inline">\(H(d_i) = \alpha \cdot \min + (1 - \alpha) \cdot \max\)</span>, se obtienen los valores <span class="math inline">\(H(d_1) = 46.45\)</span>, <span class="math inline">\(H(d_2) = 33.60\)</span>, <span class="math inline">\(H(d_3) = 28.90\)</span> y <span class="math inline">\(H(d_4) = 32.60\)</span>. Al buscar el menor coste, Hurwicz selecciona <span class="math inline">\(d_3\)</span>. Como <span class="math inline">\(d_2 \neq d_3\)</span>, ambos criterios no coinciden y la afirmación es falsa.</p></li>
+</ul></li>
+<li><strong>VERDADERO</strong>. Bajo el criterio de Wald, el valor óptimo del coste asegurado en el peor escenario posible es de 31000€. El valor minimax asegurado por la alternativa elegida (<span class="math inline">\(d_3\)</span>) es exactamente 31.</li>
+</ol>
+</section>
 </section>
 </section>
 
