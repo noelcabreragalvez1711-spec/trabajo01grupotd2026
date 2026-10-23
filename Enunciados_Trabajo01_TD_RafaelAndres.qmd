@@ -1,0 +1,70 @@
+---
+title: "Trabajo 01 - Teoría de la Decisión bajo Incertidumbre"
+subtitle: "Enunciados de los Problemas"
+author: "Rafael Andrés Caro Bejarano"
+format:
+  html: default
+  typst: default
+---
+
+## Problema 1: Tabla de Decisión Abstracta
+
+Dada la siguiente matriz de decisión con 4 alternativas de decisión ($d_1, d_2, d_3, d_4$) y 4 estados de la naturaleza ($e_1, e_2, e_3, e_4$):
+
+```{r}
+#| echo: false
+
+tabla1 <- matrix(c(15,  3, 21, -2, 8, 19, 13, 14, -4, 26,  5, 13, 20,  7, 2,  9), nrow = 4, byrow = TRUE)
+
+rownames(tabla1) <- c("$d_1$", "$d_2$", "$d_3$", "$d_4$")
+colnames(tabla1) <- c("$e_1$", "$e_2$", "$e_3$", "$e_4$")
+
+knitr::kable(tabla1, caption= "Tabla de decisión")
+```
+
+
+Se pide aplicar por separado las funciones individuales de decisión bajo incertidumbre (Wald, Optimista, Hurwicz con $\alpha = 0.3$, Savage y Laplace), evaluando el problema tanto en situación **favorable** (beneficios) como en situación **desfavorable** (costos).
+
+<br>
+
+### Preguntas del Problema 1 (Verdadero / Falso)
+
+1.  En situación favorable, el criterio de Wald selecciona la alternativa $d_4$.
+2.  En situación favorable, el criterio Optimista selecciona como mejor opción la alternativa $d_1$.
+3.  En situación favorable con un índice de optimismo $\alpha = 0.4$, el criterio de Hurwicz recomienda la alternativa $d_2$.
+4.  En situación desfavorable (costos), el criterio de Savage (minimax arrepentimiento) selecciona la alternativa $d_1$.
+5.  En situación desfavorable, el criterio de Laplace recomienda la alternativa $d_3$.
+
+<br>
+ 
+## Problema 2: Selección de Sistema de Servidores en la Nube
+
+Una consultora tecnológica en Sevilla necesita contratar una infraestructura de servidores en la nube para gestionar las cargas de computación de sus clientes durante el próximo trimestre. Dispone de cuatro opciones de contratación:
+
+* **$d_1$ (Plan Básico Compartido):** Coste fijo bajo, pero con fuertes penalizaciones económicas si la demanda de computación se dispara.
+* **$d_2$ (Plan Instancias Reservadas):** Coste intermedio y equilibrado con soporte técnico estándar.
+* **$d_3$ (Plan Clúster Dedicado Elástico):** Alta capacidad base con autoescalado para absorber picos de trabajo intenso.
+* **$d_4$ (Plan Híbrido Multicloud):** Máxima redundancia y tolerancia a fallos, pero con una cuota base muy elevada.
+
+Los costes totales estimados (en miles de euros) según el nivel de demanda que se presente en el trimestre ($e_1$: Baja, $e_2$: Media, $e_3$: Alta) vienen dados por la siguiente matriz:
+
+```{r}
+tabla2 <- matrix(c(12, 28, 65, 18, 24, 42, 25, 27, 31, 30, 32, 34), nrow = 4, byrow = TRUE)
+
+rownames(tabla2) <- c("d1_Basico", "d2_Instancias", "d3_Cluster", "d4_Hibrido")
+colnames(tabla2) <- c("e1_Baja", "e2_Media", "e3_Alta")
+
+knitr::kable(tabla2, caption = "Matriz de Costes de Infraestructura (miles de euros)")
+```
+
+Se pide determinar la mejor decisión en situación desfavorable (costes) con un índice de optimismo $\alpha = 0.35$.
+
+<br>
+
+### Preguntas del Problema 2 (Verdadero / Falso)
+
+1. El criterio Optimista recomienda contratar el Plan Básico Compartido ($d_1$).
+2. El criterio de Wald (Pesimista) selecciona el Plan Híbrido Multicloud ($d_4$).
+3. El criterio de Laplace señala como óptimo el Plan Clúster Dedicado Elástico ($d_3$).
+4. El criterio de Savage y el criterio de Hurwicz ($\alpha = 0.35$) coinciden en seleccionar la misma alternativa ($d_3$).
+5. Bajo el criterio de Wald, el valor óptimo del coste asegurado en el peor escenario posible es de 31 mil euros.
