@@ -1,0 +1,189 @@
+---
+title: "Trabajo 01 - Teoría de la Decisión bajo Incertidumbre"
+subtitle: "Soluciones de los Problemas"
+author: "Rafael Andrés Caro Bejarano"
+format:
+  html: default
+  typst: default
+---
+
+## Problema 1: Tabla de Decisión Abstracta
+
+Dada la siguiente matriz de decisión con 4 alternativas de decisión ($d_1, d_2, d_3, d_4$) y 4 estados de la naturaleza ($e_1, e_2, e_3, e_4$):
+
+```{r}
+#| echo: false
+
+tabla1 <- matrix(c(15,  3, 21, -2, 8, 19, 13, 14, -4, 26,  5, 13, 20,  7, 2,  9), nrow = 4, byrow = TRUE)
+
+rownames(tabla1) <- c("$d_1$", "$d_2$", "$d_3$", "$d_4$")
+colnames(tabla1) <- c("$e_1$", "$e_2$", "$e_3$", "$e_4$")
+
+knitr::kable(tabla1)
+source("teoriadecision_funciones_incertidumbre.R")
+
+```
+
+Se pide aplicar por separado las funciones individuales de decisión bajo incertidumbre (Wald, Optimista, Hurwicz con $\alpha = 0.3$, Savage y Laplace), evaluando el problema tanto en situación **favorable** (beneficios) como en situación **desfavorable** (costos).
+
+<br>
+
+### **RESOLUCIÓN PROBLEMA 1**
+
+<br>
+
+#### *RESOLUCIÓN CASO FAVORABLE*
+
+- Criterio de Wald (pesimista)
+
+```{r}
+res_wald_fav <- criterio.Wald(tabla1, favorable = TRUE)
+res_wald_fav
+```
+
+<br>
+
+- Criterio optimista
+
+```{r}
+res_opt_fav <- criterio.Optimista(tabla1, favorable = TRUE)
+res_opt_fav
+```
+
+<br>
+
+- Criterio de Hurwicz ($\alpha = 0.3$)
+
+```{r}
+res_hurwicz_fav <- criterio.Hurwicz(tabla1, alfa = 0.3, favorable = TRUE)
+res_hurwicz_fav
+```
+
+<br>
+
+- Criterio de Savage (Minimax Arrepentimiento)
+
+```{r}
+res_savage_fav <- criterio.Savage(tabla1, favorable = TRUE)
+res_savage_fav
+
+```
+
+<br>
+
+- Criterio de Laplace
+
+```{r}
+res_laplace_fav <- criterio.Laplace(tabla1, favorable = TRUE)
+res_laplace_fav
+```
+
+<br>
+
+#### *RESOLUCIÓN CASO DESFAVORABLE*
+
+- Criterio de Wald (Pesimista / Minimax)
+
+```{r}
+res_wald_desf <- criterio.Wald(tabla1, favorable = FALSE)
+res_wald_desf
+```
+
+<br>
+
+- Criterio Optimista (Minimin)
+
+```{r}
+res_opt_desf <- criterio.Optimista(tabla1, favorable = FALSE)
+res_opt_desf
+```
+
+<br>
+
+- Criterio de Hurwicz ($\alpha = 0.3$)
+
+```{r}
+res_hurwicz_desf <- criterio.Hurwicz(tabla1, alfa = 0.3, favorable = FALSE)
+res_hurwicz_desf
+```
+
+<br>
+
+- Criterio de Savage (Minimax Penalización)
+
+```{r}
+res_savage_desf <- criterio.Savage(tabla1, favorable = FALSE)
+res_savage_desf
+
+
+```
+
+<br>
+
+- Criterio de Laplace
+
+```{r}
+res_laplace_desf <- criterio.Laplace(tabla1, favorable = FALSE)
+res_laplace_desf
+```
+
+<br>
+
+### **SOLUCIONES VERDADERO / FALSO**
+
+1.  **FALSO**. En situación favorable, el criterio de Wald selecciona la alternativa $d_2$. Los mínimos por alternativa son $d_1: -2$, $d_2: 8$, $d_3: -4$, $d_4: 2$. El máximo de los mínimos es $8$, correspondiente a $d_2$.
+
+2.  **FALSO**. En situación favorable, el criterio Optimista selecciona como mejor opción la alternativa $d_3$. Los máximos por fila son $d_1 :21$, $d_2 :19$, $d_3 :26$, $d_4 :20$. El máximo global es $26$, seleccionando $d_3$.
+
+3.  **VERDADERO**. En situación favorable con un índice de optimismo $\alpha = 0.3$, el criterio de Hurwicz recomienda la alternativa $d_2$ $d_1: 4.9$, $d_2: 11.3$, $d_3: 5.0$, $d_4: 7.4$. El valor óptimo es $11.3$ que corresponde a $d_2$.
+
+4.  **FALSO**. La matriz de mínimos por columna (óptimos en costos) es $(-4, 3, 2, -2)$. Las penalizaciones máximas por fila son: $d_1: 19$, $d_2: 16$, $d_3: 23$, $d_4: 24$. El mínimo pesar lo alcanza $d_2$ con valor 16.
+
+5.  **FALSO**. En situación desfavorable (costes), el criterio de Laplace busca minimizar la media de cada alternativa. Las medias calculadas son: $d_1 = 9.25$, $d_2 = 13.50$, $d_3 = 10.00$ y $d_4 = 9.50$. Por tanto, el óptimo corresponde a la alternativa con menor coste medio, que es $d_1$ (con un valor de $9.25$), y no $d_3$.
+
+    <br>
+
+## PROBLEMA 2
+
+Una consultora tecnológica en Sevilla necesita contratar una infraestructura de servidores en la nube para gestionar las cargas de computación de sus clientes durante el próximo trimestre. Dispone de cuatro opciones de contratación:
+
+- $d_1$ (Plan Básico Compartido): Coste fijo bajo, pero con fuertes penalizaciones económicas si la demanda de computación se dispara.
+- $d_2$ (Plan Instancias Reservadas): Coste intermedio y equilibrado con soporte técnico estándar.
+- $d_3$ (Plan Clúster Dedicado Elástico): Alta capacidad base con autoescalado para absorber picos de trabajo intenso.
+- $d_4$ (Plan Híbrido Multicloud): Máxima redundancia y tolerancia a fallos, pero con una cuota base muy elevada.
+
+Los costes totales estimados (en miles de euros) según el nivel de demanda que se presente en el trimestre ($e_1$: Baja, $e_2$: Media, $e_3$: Alta) vienen dados por la siguiente matriz:
+
+<br>
+
+```{r}
+tabla2 <- matrix(c(12, 28, 65, 18, 24, 42, 25, 27, 31, 30, 32, 34), nrow = 4, byrow = TRUE)
+
+rownames(tabla2) <- c("d1_Basico", "d2_Instancias", "d3_Cluster", "d4_Hibrido")
+colnames(tabla2) <- c("e1_Baja", "e2_Media", "e3_Alta")
+
+knitr::kable(tabla2, caption = "Matriz de Costes de Infraestructura (miles de euros)")
+```
+
+<br>
+
+### **RESOLUCIÓN PROBLEMA 2**
+
+```{r}
+res_todos <- criterio.Todos(tabla2, alfa = 0.35, favorable = FALSE)
+
+knitr::kable(res_todos, caption = "Resultados globales de los criterios de decisión bajo incertidumbre")
+```
+
+<br>
+
+### SOLUCIONES VERDADERO / FALSO
+
+1.  **VERDADERO**. Al tratarse de costes, el criterio optimista busca el mínimo absoluto de la matriz: $\min(12, 28, 65, 18, 24, 42, 25, 27, 31, 30, 32, 34) = 12$, alcanzado por $d_1$ ante demanda baja ($e_1$).
+2.  **FALSO**. En costes se aplica la regla minimax (el mínimo de los peores escenarios). Los costes máximos por fila son $d_1: 65$, $d_2: 42$, $d_3: 31$ y $d_4: 34$. El menor de ellos es $31$, correspondiente a $d_3$ (Plan Clúster).
+3.  **VERDADERO**. Asumiendo igual probabilidad ($1/3$) para cada estado se tiene que $E(d_1) = 35.00$, $E(d_2) = 28.00$, $E(d_3) = 27.67$, $E(d_4) = 32.00$ El menor coste esperado es $27.67$, eligiendo $d_3$.
+4.  **FALSO.** Veamos la resolución de ambos criterios:
+    - **Savage:** La matriz de pesares toma como referencia los mínimos por columna $(12, 24, 31)$, obteniendo como pesares máximos $34$ para $d_1$, $11$ para $d_2$, $13$ para $d_3$ y $18$ para $d_4$. El menor pesar máximo es $11$, por lo que se selecciona la alternativa $d_2$.
+
+    - **Hurwicz (**$\alpha = 0.35$ en costes): Aplicando la expresión $H(d_i) = \alpha \cdot \min + (1 - \alpha) \cdot \max$, se obtienen los valores $H(d_1) = 46.45$, $H(d_2) = 33.60$, $H(d_3) = 28.90$ y $H(d_4) = 32.60$. Al buscar el menor coste, Hurwicz selecciona $d_3$. Como $d_2 \neq d_3$, ambos criterios no coinciden y la afirmación es falsa.
+5.  **VERDADERO**. Bajo el criterio de Wald, el valor óptimo del coste asegurado en el peor escenario posible es de 31000€. El valor minimax asegurado por la alternativa elegida ($d_3$) es exactamente 31.
